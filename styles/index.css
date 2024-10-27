@@ -1,0 +1,92 @@
+/* Custom Properties */
+:root {
+    --clr-slate-900: #1F314F;
+    --clr-slate-500: #68778D;
+    --clr-slate-300: #D5E1EF;
+
+    --spacing-500: 40px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+}
+
+/* Presets */
+.text-preset-1 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.text-preset-2 {
+    font-size: 15px;
+    line-height: 140%;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+/* Resets */
+* {
+    margin: 0;
+}
+
+html,
+* {
+    box-sizing: border-box;
+}
+
+/* Styles for Component */
+body {
+    background: var(--clr-slate-300);
+    font-family: "Outfit", sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.qr-code-component {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 4.77%);
+    padding: var(--spacing-200);
+    padding-bottom: var(--spacing-500);
+
+    /* QR Code Image */
+    img {
+        border-radius: 10px;
+        overflow: hidden;
+        aspect-ratio: 1 / 1;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        padding-inline: var(--spacing-200);
+        gap: var(--spacing-200);
+        text-align: center;
+        margin-top: var(--spacing-300);
+
+        /* Heading */
+        h1 {
+            color: var(--clr-slate-900);
+        }
+
+        /* Paragraph */
+        p {
+            color: var(--clr-slate-500);
+        }
+    }
+}
+
+/* Attribution */
+.attribution {
+    position: absolute;
+    bottom: var(--spacing-200);
+    margin-inline: auto;
+    width: 100%;
+}
